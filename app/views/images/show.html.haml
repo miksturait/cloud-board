@@ -5,5 +5,9 @@
   = @image.image
 
 = link_to 'Edit', edit_image_path(@image)
-\|
 = link_to 'Back', images_path
+
+%h2 Collections
+  = simple_form_for [collection_image, CollectionImage.new] do |f|
+    = f.association :collections, as: :check_boxes
+    = f.button :submit
