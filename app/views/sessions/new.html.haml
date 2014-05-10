@@ -1,0 +1,6 @@
+.container
+  = simple_form_for :session, url: sessions_path do |f|
+    = f.input :login
+    = f.input :password
+    = f.input :remember_me, as: :boolean
+    = f.button :submit, "Login"
