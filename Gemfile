@@ -35,9 +35,6 @@ gem 'cloudinary'
 # --- datetime ---
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
 
-# --- tracker ---
-gem 'bugsnag'
-
 group :development do
   gem 'thin'                # better alternative to webrick
   gem 'quiet_assets'        # get rid of assets from console
