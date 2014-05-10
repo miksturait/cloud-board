@@ -1,0 +1,45 @@
+.container
+  width: 960px
+  margin: 0 auto
+
+.col
+  overflow: hidden
+    
+.row
+  margin-bottom: 20px
+    
+#drop-area
+  margin: 20px 0
+  min-height: 80px
+  text-align: center
+  
+  em
+    line-height: 80px
+  
+input, textarea
+  max-width: 300px
+  display: block
+    
+.dz-preview 
+  float: left
+  margin: 0 1.2% 1.2% 0
+  max-height: 150px
+  overflow: hidden
+  position: relative
+    
+.upload-area 
+  .dz-preview:nth-of-type(6n+1)
+    margin-right: 0
+
+  .dz-filename, .dz-error-mark, .dz-success-mark, .dz-error-message, .dz-size
+    display: none
+      
+  .dz-success .dz-success-mark, .dz-error .dz-error-mark
+    display: block
+    font-size: 50px
+    height: 100%
+    position: absolute
+    line-height: 150px
+    top: 0
+    width: 100%
+    text-align: center

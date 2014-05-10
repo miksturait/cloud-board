@@ -1,21 +1,11 @@
-%h1 Listing boards
-
-%table
-  %tr
-    %th Title
-    %th Description
-    %th
-    %th
-    %th
-
-  - @boards.each do |board|
-    %tr
-      %td= board.title
-      %td= board.description
-      %td= link_to 'Show', board
-      %td= link_to 'Edit', edit_board_path(board)
-      %td= link_to 'Destroy', board, :method => :delete, :data => { :confirm => 'Are you sure?' }
-
-%br
-
+%h2 My boards
 = link_to 'New Board', new_board_path
+
+- @boards.each_slice(4) do |bs|
+  .row
+    - bs.each do |b|
+      .col.col-3
+        = image_tag b.images.first.image_url(:thumb) unless b.images.first.nil?
+        = link_to 'Show', b
+        = link_to 'Edit', edit_board_path(b)
+        = link_to 'Destroy', b, :method => :delete, :data => { :confirm => 'Are you sure?' }
