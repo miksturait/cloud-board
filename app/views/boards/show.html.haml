@@ -1,5 +1,12 @@
 %p#notice= notice
 
+= form_for Image.new, url: board_images_path(@board), html: { multipart: true, class: "row upload-area center", id: "drop-area" } do |f|
+  .fallback
+    = f.file_field :image, multiple: true, name: "image[image]", id: "fileupload"
+  
+  %em
+    Drop files to upload or click to choose manually
+
 %p
   %b Title:
   = @board.title
@@ -9,8 +16,18 @@
 
 - @board.images.each do |i|
   = image_tag i.image_url(:thumb)
+  = link_to "Preview", board_image_path(@board, i)
   
 = link_to 'Edit', edit_board_path(@board)
 = link_to 'Back', boards_path
 
 = link_to "Add image", new_board_image_path(@board)
+
+
+:javascript
+  $("#drop-area").dropzone({
+    paramName: "image[image]",
+    maxFilesize: 2,
+    thumbnailWidth: 250,
+    thumbnailHeight: 150
+  });
