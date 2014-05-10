@@ -4,8 +4,6 @@
   %tr
     %th Title
     %th Description
-    %th Preview
-    %th User
     %th
     %th
     %th
@@ -14,8 +12,6 @@
     %tr
       %td= board.title
       %td= board.description
-      %td= board.preview
-      %td= board.user
       %td= link_to 'Show', board
       %td= link_to 'Edit', edit_board_path(board)
       %td= link_to 'Destroy', board, :method => :delete, :data => { :confirm => 'Are you sure?' }
