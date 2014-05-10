@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140510111047) do
+ActiveRecord::Schema.define(version: 20140510112525) do
 
   create_table "boards", force: true do |t|
     t.string   "title"
@@ -24,6 +24,16 @@ ActiveRecord::Schema.define(version: 20140510111047) do
 
   add_index "boards", ["preview_id"], name: "index_boards_on_preview_id"
   add_index "boards", ["user_id"], name: "index_boards_on_user_id"
+
+  create_table "collection_images", force: true do |t|
+    t.integer  "image_id"
+    t.integer  "collection_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "collection_images", ["collection_id"], name: "index_collection_images_on_collection_id"
+  add_index "collection_images", ["image_id"], name: "index_collection_images_on_image_id"
 
   create_table "collections", force: true do |t|
     t.string   "title"
