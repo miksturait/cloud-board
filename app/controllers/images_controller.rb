@@ -6,11 +6,13 @@ class ImagesController < ApplicationController
   # GET /images.json
   def index
     @images = Image.all
+    @collections = current_user.collections
   end
 
   # GET /images/1
   # GET /images/1.json
   def show
+  
   end
 
   # GET /images/new
