@@ -4,7 +4,7 @@ class BoardsController < ApplicationController
   # GET /boards
   # GET /boards.json
   def index
-    @boards = Board.all
+    @boards = current_user.boards.all
   end
 
   # GET /boards/1
@@ -25,6 +25,7 @@ class BoardsController < ApplicationController
   # POST /boards.json
   def create
     @board = Board.new(board_params)
+    @board.user = current_user
 
     respond_to do |format|
       if @board.save
@@ -69,6 +70,6 @@ class BoardsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def board_params
-      params.require(:board).permit(:title, :description, :preview_id, :user_id)
+      params.require(:board).permit(:title, :description)
     end
 end

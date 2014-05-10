@@ -6,12 +6,9 @@
 %p
   %b Description:
   = @board.description
-%p
-  %b Preview:
-  = @board.preview
-%p
-  %b User:
-  = @board.user
+
+- @board.images.each do |i|
+  = image_tag image.image_url(:thumb)
 
 = link_to 'Edit', edit_board_path(@board)
 \|
