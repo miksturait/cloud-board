@@ -9,6 +9,7 @@
 
 - @board.images.each do |i|
   = image_tag i.image_url(:thumb)
+  = link_to "Preview", board_image_path(@board, i)
   
 = link_to 'Edit', edit_board_path(@board)
 = link_to 'Back', boards_path

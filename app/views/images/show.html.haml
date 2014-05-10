@@ -2,8 +2,8 @@
 
 %p
   %b Image:
-  = @image.image
+  = image_tag @image.image_url
 
-= link_to 'Edit', edit_image_path(@image)
+= link_to 'Edit', edit_board_image_path(@board, @image)
 \|
-= link_to 'Back', images_path
+= link_to 'Back', @board

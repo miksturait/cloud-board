@@ -17,7 +17,12 @@
       %nav
         %ul.inline
           %li= link_to "Home", root_path
-          %li= link_to "Login", login_path
+          - unless current_user
+            %li= link_to "Login", login_path
+          - else
+            %li= link_to "Logout", logout_path
+            %li= link_to "My boards", boards_path
+            %li= link_to "My collections", collections_path
           
       = yield
       
