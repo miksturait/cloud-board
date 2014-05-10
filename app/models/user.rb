@@ -20,6 +20,7 @@ class User < ActiveRecord::Base
   # --- Associations ---
   has_many :boards
   has_many :images, through: :boards
+  has_many :collections
   
   # --- Validations ---
   validates :email, :password, :username, presence: true

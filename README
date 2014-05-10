@@ -1,0 +1,10 @@
+-------Cloudboard--------
+Aplikacja do zarzadzania obrazkami. Kazdy uzytkownik moze tworzyc
+grupy i uploadowac swoje obrazki(drag and drop). Oprocz tego moze posiadac kolekcje w ktorych moga znalezc sie obrazki z roznych jego grup. 
+Grupa moze byc albo publiczna albo prywatna.
+Aplikacja wymaga zalogowania
+Obrazki beda przetrzymywane na dropboxie (zeby nie obciazac serwera)
+------------------------------------------------------------
+
+
+
