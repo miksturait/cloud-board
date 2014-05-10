@@ -12,18 +12,20 @@
     = csrf_meta_tags
 
   %body
-    #page.container
+    #page
       %nav
-        %ul.inline
+        %ul.inline.container
           %li= link_to "Home", root_path
-          - unless current_user
-            %li= link_to "Login", login_path
-          - else
-            %li= link_to "Logout", logout_path
+          - if current_user
             %li= link_to "My boards", boards_path
             %li= link_to "My collections", collections_path
-          
-      = yield
+            %span= "Welcome back #{current_user.username}"
+            %li= link_to "Logout", logout_path
+          - else
+            %li= link_to "Login", login_path
+            
+      .container
+        = yield
       
     #footer
       .container
