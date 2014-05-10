@@ -7,6 +7,9 @@
   %b Description:
   = @board.description
 
+- @board.images.each do |i|
+  = image_tag image.image_url(:thumb)
+
 = link_to 'Edit', edit_board_path(@board)
 \|
 = link_to 'Back', boards_path
