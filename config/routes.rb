@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :boards
+
   resources :collections
 
   resources :images
