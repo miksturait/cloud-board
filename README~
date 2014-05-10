@@ -5,17 +5,6 @@ Grupa moze byc albo publiczna albo prywatna.
 Aplikacja wymaga zalogowania
 Obrazki beda przetrzymywane na dropboxie (zeby nie obciazac serwera)
 ------------------------------------------------------------
-Dzisiaj:
-  Gotowe:
-    -logowanie, rejestracja
-    -dodawanie grup oraz kolekcji
-    -upload obrazkow na serwer, podglad
-
-Za tydzien:
-    -dodawannie obrazkow do kolekcji
-    -polaczenie z dropboxem
-   
-    
 
 
 

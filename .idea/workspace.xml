@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3fed103f-5a7f-49b3-9c74-fdc88e38be8d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/tmp/1399725469-4824-4088/Screen_Shot_2013-12-27_at_13.28.50.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/tmp/1399725497-4824-9786/Screen_Shot_2014-01-03_at_14.04.56.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/application/dropzone.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/boards.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/collections.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/images.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/sessions.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/users.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.haml" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/collections_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/collections_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/images_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/images_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/boards/show.html.haml" afterPath="$PROJECT_DIR$/app/views/boards/show.html.haml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/images/show.html.haml" afterPath="$PROJECT_DIR$/app/views/images/show.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="cloud-board.iws" />
@@ -106,7 +92,7 @@
       <file leaf-file-name="show.html.haml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/images/show.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="0" selection-start="65" selection-end="65" vertical-scroll-proportion="0.115030676" vertical-offset="0" max-vertical-offset="652">
+            <state line="4" column="30" selection-start="64" selection-end="64" vertical-scroll-proportion="0.09202454" vertical-offset="0" max-vertical-offset="652">
               <folding />
             </state>
           </provider>
@@ -776,7 +762,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/images/show.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="65" selection-end="65" vertical-scroll-proportion="0.115030676" vertical-offset="0" max-vertical-offset="652">
+        <state line="4" column="30" selection-start="64" selection-end="64" vertical-scroll-proportion="0.09202454" vertical-offset="0" max-vertical-offset="652">
           <folding />
         </state>
       </provider>
