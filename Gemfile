@@ -36,6 +36,7 @@ gem 'cloudinary'
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
 
 group :development do
+  gem 'therubyracer', platforms: [:ruby]
   gem 'thin'                # better alternative to webrick
   gem 'quiet_assets'        # get rid of assets from console
   gem 'commands'            # run rails commands from rails c to speed up the process
