@@ -1,0 +1,362 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+input, select {
+  vertical-align: middle;
+}
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+.row {
+  position: relative;
+  white-space: nowrap;
+}
+
+.clear:after, .row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.col {
+  white-space: normal;
+  display: inline-block;
+  margin-right: 1.2%;
+  vertical-align: top;
+}
+.col.right {
+  float: right;
+}
+.col:last-child {
+  margin-right: 0;
+}
+
+.tile {
+  float: left;
+}
+.tile.right {
+  float: right;
+}
+
+.col-1 {
+  width: 7.23333%;
+}
+
+.tile-1 {
+  width: 8.33333%;
+}
+
+.push-1 {
+  margin-left: 7.23333%;
+}
+
+.col-2 {
+  width: 15.66667%;
+}
+
+.tile-2 {
+  width: 16.66667%;
+}
+
+.push-2 {
+  margin-left: 15.66667%;
+}
+
+.col-3 {
+  width: 24.1%;
+}
+
+.tile-3 {
+  width: 25%;
+}
+
+.push-3 {
+  margin-left: 24.1%;
+}
+
+.col-4 {
+  width: 32.53333%;
+}
+
+.tile-4 {
+  width: 33.33333%;
+}
+
+.push-4 {
+  margin-left: 32.53333%;
+}
+
+.col-5 {
+  width: 40.96667%;
+}
+
+.tile-5 {
+  width: 41.66667%;
+}
+
+.push-5 {
+  margin-left: 40.96667%;
+}
+
+.col-6 {
+  width: 49.4%;
+}
+
+.tile-6 {
+  width: 50%;
+}
+
+.push-6 {
+  margin-left: 49.4%;
+}
+
+.col-7 {
+  width: 57.83333%;
+}
+
+.tile-7 {
+  width: 58.33333%;
+}
+
+.push-7 {
+  margin-left: 57.83333%;
+}
+
+.col-8 {
+  width: 66.26667%;
+}
+
+.tile-8 {
+  width: 66.66667%;
+}
+
+.push-8 {
+  margin-left: 66.26667%;
+}
+
+.col-9 {
+  width: 74.7%;
+}
+
+.tile-9 {
+  width: 75%;
+}
+
+.push-9 {
+  margin-left: 74.7%;
+}
+
+.col-10 {
+  width: 83.13333%;
+}
+
+.tile-10 {
+  width: 83.33333%;
+}
+
+.push-10 {
+  margin-left: 83.13333%;
+}
+
+.col-11 {
+  width: 91.56667%;
+}
+
+.tile-11 {
+  width: 91.66667%;
+}
+
+.push-11 {
+  margin-left: 91.56667%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.tile-12 {
+  width: 100%;
+}
+
+.push-12 {
+  margin-left: 100%;
+}
+
+.inline li {
+  display: inline-block;
+}
+
+@media screen and (max-width: 981px) {
+  .container {
+    max-width: 90%;
+  }
+}
+@media screen and (max-width: 769px) {
+  .container {
+    max-width: 97%;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+  }
+
+  .col:nth-of-type(2n) {
+    margin-right: 0;
+  }
+
+  /* Excluding last element since it has already 100% width in both cases */
+  .col-1 {
+    width: 49.1%;
+  }
+
+  .tile-1 {
+    width: 50%;
+  }
+
+  .push-1 {
+    margin-left: 0;
+  }
+
+  .col-2 {
+    width: 49.1%;
+  }
+
+  .tile-2 {
+    width: 50%;
+  }
+
+  .push-2 {
+    margin-left: 0;
+  }
+
+  .col-3 {
+    width: 49.1%;
+  }
+
+  .tile-3 {
+    width: 50%;
+  }
+
+  .push-3 {
+    margin-left: 0;
+  }
+
+  .col-4 {
+    width: 49.1%;
+  }
+
+  .tile-4 {
+    width: 50%;
+  }
+
+  .push-4 {
+    margin-left: 0;
+  }
+
+  .col-5 {
+    width: 49.1%;
+  }
+
+  .tile-5 {
+    width: 50%;
+  }
+
+  .push-5 {
+    margin-left: 0;
+  }
+
+  .col-7, .tile-7 {
+    width: 100%;
+  }
+
+  .push-7 {
+    margin-left: 0;
+  }
+
+  .col-8, .tile-8 {
+    width: 100%;
+  }
+
+  .push-8 {
+    margin-left: 0;
+  }
+
+  .col-9, .tile-9 {
+    width: 100%;
+  }
+
+  .push-9 {
+    margin-left: 0;
+  }
+
+  .col-10, .tile-10 {
+    width: 100%;
+  }
+
+  .push-10 {
+    margin-left: 0;
+  }
+
+  .col-11, .tile-11 {
+    width: 100%;
+  }
+
+  .push-11 {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .col, .tile {
+    width: 100%;
+  }
+}

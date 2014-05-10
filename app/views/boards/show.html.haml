@@ -1,4 +1,7 @@
-%p#notice= notice
+%h2= @board.title
+%p= @board.description
+= link_to 'Edit', edit_board_path(@board)
+= link_to 'Back', boards_path
 
 = form_for Image.new, url: board_images_path(@board), html: { multipart: true, class: "row upload-area center", id: "drop-area" } do |f|
   .fallback
@@ -7,23 +10,13 @@
   %em
     Drop files to upload or click to choose manually
 
-%p
-  %b Title:
-  = @board.title
-%p
-  %b Description:
-  = @board.description
-
-- @board.images.each do |i|
-  = image_tag i.image_url(:thumb)
-  = link_to "Preview", board_image_path(@board, i)
+- @board.images.each_slice(4) do |is|
+  .row
+    - is.each do |i|
+      .col.col-3
+        = image_tag i.image_url(:thumb)
+        = link_to "Preview", board_image_path(@board, i)
   
-= link_to 'Edit', edit_board_path(@board)
-= link_to 'Back', boards_path
-
-= link_to "Add image", new_board_image_path(@board)
-
-
 :javascript
   $("#drop-area").dropzone({
     paramName: "image[image]",

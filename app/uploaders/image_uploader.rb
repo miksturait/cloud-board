@@ -12,6 +12,11 @@ class ImageUploader < CarrierWave::Uploader::Base
     process resize_to_fill: [250, 150, :center]
   end
   
+    # --- Default image ---
+  def default_url
+    "/assets/" + [version_name, "no-avatar.jpg"].compact.join('-')
+  end
+  
   # --- Storage ---
   def store_dir
     "uploads/photos/#{model.gallery.id}/#{model.id}"

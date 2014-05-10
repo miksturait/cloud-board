@@ -5,26 +5,27 @@
     %meta{charset: "utf-8"}
     %meta{content: "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}
     
-    -#    %link{href: "http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic", rel: "stylesheet", type: "text/css"}
-    -#    %script{src: "//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"}
+    %link{href: "http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic", rel: "stylesheet", type: "text/css"}
  
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
 
   %body
-    #page.container
+    #page
       %nav
-        %ul.inline
+        %ul.inline.container
           %li= link_to "Home", root_path
-          - unless current_user
-            %li= link_to "Login", login_path
-          - else
-            %li= link_to "Logout", logout_path
+          - if current_user
             %li= link_to "My boards", boards_path
             %li= link_to "My collections", collections_path
-          
-      = yield
+            %span= "Welcome back #{current_user.username}"
+            %li= link_to "Logout", logout_path
+          - else
+            %li= link_to "Login", login_path
+            
+      .container
+        = yield
       
     #footer
       .container
