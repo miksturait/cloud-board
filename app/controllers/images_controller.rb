@@ -5,11 +5,13 @@ class ImagesController < ApplicationController
   # GET /images.json
   def index
     @images = Image.all
+    @collections = current_user.collections
   end
 
   # GET /images/1
   # GET /images/1.json
   def show
+  
   end
 
   # GET /images/new
@@ -25,7 +27,6 @@ class ImagesController < ApplicationController
   # POST /images.json
   def create
     @image = Image.new(image_params)
-
     respond_to do |format|
       if @image.save
         format.html { redirect_to @image, notice: 'Image was successfully created.' }
