@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: dydb2bm24
+  api_key: '876436177225337'
+  api_secret: 7rIdi4_P4v1xPKrZSuHcfb-2Kwc
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: dydb2bm24
+  api_key: '876436177225337'
+  api_secret: 7rIdi4_P4v1xPKrZSuHcfb-2Kwc
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: dydb2bm24
+  api_key: '876436177225337'
+  api_secret: 7rIdi4_P4v1xPKrZSuHcfb-2Kwc
+  enhance_image_tag: true
+  static_image_support: false

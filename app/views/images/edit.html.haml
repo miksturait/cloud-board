@@ -1,7 +1,5 @@
 %h1 Editing image
 
-= render 'form'
+= render partial: 'form', locals: { url: board_image_path(@board, @image) }
 
 = link_to 'Show', @image
-\|
-= link_to 'Back', images_path

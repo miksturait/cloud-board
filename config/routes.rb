@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   
   # --- Boards & Collections ----
   resources :boards do
-    resources :images, only: [:update, :destroy, :create]
+    resources :images
   end
 
   resources :collections

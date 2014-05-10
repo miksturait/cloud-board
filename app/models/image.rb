@@ -4,4 +4,7 @@ class Image < ActiveRecord::Base
   belongs_to :user
   belongs_to :collection_image
   has_many :collections, through: :collection_image
+  
+  # --- Uploader ---
+  mount_uploader :image, ImageUploader
 end
